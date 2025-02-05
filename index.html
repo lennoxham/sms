@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Grade Management</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse; 
+            margin-top: 20px;
+        }
+        th {
+            border-style: solid;  
+            border-width: 1px;
+            border-color: rgb(171, 171, 171);          
+            padding: 8px;
+        }
+        td {
+            border-style: solid; 
+            border-width: 1px;
+            border-color: rgb(171, 171, 171);            
+            padding: 8px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Student Grade Management</h1>
+    <input id="studentName" type="text" placeholder="Student name">
+    <input id="maths" type="number" placeholder="Maths Score (0-100)">
+    <input id="science" type="number" placeholder="Scince Score (0-100)">
+    <input id="english" type="number" placeholder="English Score (0-100)">
+    <button id="addStudent">Add Student</button>
+    <button>Calculate Class Stats</button>
+
+    <table id="studentTable">
+        <thead>
+            <tr>
+              <th>Name</th>  
+              <th>Math</th>
+              <th>Scince</th>
+              <th>English</th>
+              <th>Total</th>
+              <th>Average</th>
+              <th>Grade</th>
+              <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="studentList">
+            <tr>
+                <td>Peter</td>
+                <td>30</td>
+                <td>30</td>
+                <td>30</td>
+                <td>90</td>
+                <td>30</td>
+                <td>F</td>
+                <td><button>Delete</button></td>
+            </tr>
+            <tr>
+                <td>Andy</td>
+                <td>50</td>
+                <td>50</td>
+                <td>50</td>
+                <td>150</td>
+                <td>50</td>
+                <td>D</td>
+                <td><button>Delete</button></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script src="index.js"></script>
+</body>
+</html>
