@@ -16,6 +16,11 @@
 
 // step 4 - Input validation
 
+
+// ADD STUDENT BUTTON
+const studentsData = []  // Database
+
+
 document.getElementById("addStudent").addEventListener("click", function () {
    
     // retrieving values from inputs
@@ -89,5 +94,48 @@ document.getElementById("addStudent").addEventListener("click", function () {
         document.getElementById("englishMsg").style.color = "black"
     }
     
+    // Step 5
+    if (mathScore > 100 || mathScore < 0) {
+        document.getElementById("numberMsg").textContent = "Score Cannot be above 100 or Below 0!"
+        document.getElementById("numberMsg").style.color = "red"
+    } else {
+        document.getElementById("numberMsg").textContent = ""
+    }
 
+    if (scinceScore > 100 || scinceScore < 0) {
+        document.getElementById("scienceMsg").textContent = "Score Cannot be above 100 or Below 0!"
+        document.getElementById("scienceMsg").style.color = "red"
+    } else {
+        document.getElementById("scienceMsg").textContent = ""
+    }
+
+    if (englishScore > 100 || englishScore < 0) {
+        document.getElementById("englishMsg").textContent = "Score Cannot be above 100 or Below 0!"
+        document.getElementById("englishMsg").style.color = "red"
+    } else {
+        document.getElementById("englishMsg").textContent = ""
+    }
+
+    // Populate the Object - then add to our list
+    studentsData.push = student
+    studentsData.push = mathScore
+    studentsData.push = englishScore
+    studentsData.push = scinceScore
+    studentsData.push = grade
+    studentsData.push = total
+    studentsData.push = average
+
+    
+    console.log(studentsData)
+
+    
+
+})
+
+console.log(studentsData)
+
+
+// CALCULATE STATS BUTTON
+document.getElementById("calculateStats").addEventListener("click", function () {
+    
 })
