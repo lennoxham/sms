@@ -3,6 +3,9 @@
 // 3. Display it on our table on clicking the button (addStudent)
 
 
+
+
+
 // 4. if inputs are empty and we click on add student button we show and Alert
 // 5. if inputs of scores are above 100 or below 0 display an error at the bottom of the input
 // 6. Caculate the summary using CCS btn and disply it at the bottom of the table
